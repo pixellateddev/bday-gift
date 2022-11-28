@@ -2,8 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  height: 100vh;
 }
 
 a {
@@ -15,12 +14,100 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+
+body {
+  font-family: 'Happy Monkey', cursive;
+  text-align: center;
+  /* background: linear-gradient(#a2d2ff, #EFB0C9); */
+  
+  color: #36454F;
+}
+
+h1, h2, h3, h4, p {
+  text-shadow: 0 0 1px black;
+}
+
+.container {
+  padding: 1em 1em
+}
+
+@media screen and (min-width: 700px){
+  .container {
+    padding: 5em 1em;
   }
-  body {
-    color: white;
-    background: black;
-  }
+}
+
+.background {
+  background-image: url("../public/bday1.jpg");
+  background-size: contain;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.2;
+  
+}
+
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bday-img {
+  border-radius: 50%;
+  border: 6px solid #EFB0C9;
+}
+
+
+.bday-age, .bday-date {
+  background: #EFB0C9;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px 0 10px 0;
+}
+
+.gift-section {
+  margin-top: 50px;
+}
+
+.gift-img {
+  margin: 20px auto;
+  max-width: 400px;
+  height: 400px;
+  border: 6px solid white;
+  border-radius: 10px;
+  background-image: url("../public/gift-cover.jpg");
+  background-size: cover;
+}
+
+#gift-img-happy:hover {
+  background-image: url("../public/happy.gif");
+}
+
+#gift-img-hot:hover {
+  background-image: url("../public/hot.gif");
+}
+
+#gift-img-genius:hover {
+  background-image: url("../public/genius.gif");
+}
+
+#gift-img-badass:hover {
+  background-image: url("../public/badass.gif");
+}
+
+#gift-img-cheers:hover {
+  background-image: url("../public/cheers.gif");
+}
+
+#gift-img-blast:hover {
+  background-image: url("../public/blast.gif");
+}
+
+#gift-img-cheers {
+  height: 200px;
 }
