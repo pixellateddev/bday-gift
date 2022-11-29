@@ -9,7 +9,7 @@ interface Props {
 
 const Timer: FC<Props> = ({till, done}) => {
     const [diff, setDiff] = useState(till.diff(moment(), 'second'))
-    if (diff === 0) {
+    if (diff <= 0) {
         done()
     }
     let n = diff
