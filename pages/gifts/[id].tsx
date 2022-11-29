@@ -41,7 +41,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
       paths: bdays.map((bday: any) => ({
         params: { id: bday.slug.current}
       })),
-      fallback: false, // can also be true or 'blocking'
+      fallback: 'blocking', // can also be true or 'blocking'
     }
 }
 
@@ -56,7 +56,7 @@ export const getStaticProps: GetStaticProps = async ({params}) => {
     return {
         props: {
             bday: data[0]
-        }
+        },
     }
 }
 
