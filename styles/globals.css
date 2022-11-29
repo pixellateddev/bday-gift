@@ -53,10 +53,17 @@ h1, h2, h3, h4, p {
 
 .timer {
   background-color: rgba(0,0,0,0.7);
-  padding: 1em 2em;
+  padding: 3em 2em;
   /* max-width: 400px; */
+  min-width: 360px;
   border-radius: 8px;
   box-shadow:4px 4px 8px #EFB0C9;
+}
+
+@media screen and (min-width: 500px) {
+  .timer {
+    min-width: 450px;
+  }
 }
 
 .time {
