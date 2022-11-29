@@ -83,31 +83,3 @@ h1, h2, h3, h4, p {
   background-image: url("../public/gift-cover.jpg");
   background-size: cover;
 }
-
-#gift-img-happy:hover {
-  background-image: url("../public/happy.gif");
-}
-
-#gift-img-hot:hover {
-  background-image: url("../public/hot.gif");
-}
-
-#gift-img-genius:hover {
-  background-image: url("../public/genius.gif");
-}
-
-#gift-img-badass:hover {
-  background-image: url("../public/badass.gif");
-}
-
-#gift-img-cheers:hover {
-  background-image: url("../public/cheers.gif");
-}
-
-#gift-img-blast:hover {
-  background-image: url("../public/blast.gif");
-}
-
-#gift-img-cheers {
-  height: 200px;
-}
