@@ -54,14 +54,21 @@ h1, h2, h3, h4, p {
 .timer {
   background-color: rgba(0,0,0,0.7);
   padding: 1em 2em;
-  max-width: 400px;
+  /* max-width: 400px; */
   border-radius: 8px;
-  box-shadow: 4px 4px 4px #EFB0C9;
+  box-shadow:4px 4px 8px #EFB0C9;
 }
 
 .time {
   font-size: 2rem;
+  text-align: center;
+  margin: .5em 0;
 }
+
+.time p {
+  margin: .2em
+}
+
 
 
 .header {
