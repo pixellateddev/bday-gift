@@ -22,7 +22,7 @@ const Timer: FC<Props> = ({till, done}) => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setDiff(prevDiff => prevDiff - 1)
+            setDiff(till.diff(moment(), 'second'))
         }, 1000)
         return () => {
             clearInterval(interval)
