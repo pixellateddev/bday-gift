@@ -60,6 +60,7 @@ h1, h2, h3, h4, p {
 .bday-img {
   border-radius: 50%;
   border: 6px solid #EFB0C9;
+  margin-bottom: 1em;
 }
 
 
@@ -67,7 +68,8 @@ h1, h2, h3, h4, p {
   background: #EFB0C9;
   padding: 5px 10px;
   border-radius: 5px;
-  margin: 5px 0 10px 0;
+  margin: 10px;
+
 }
 
 .gift-section {
