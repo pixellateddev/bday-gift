@@ -110,5 +110,6 @@ h1, h2, h3, h4, p {
   border: 6px solid white;
   border-radius: 10px;
   background-image: url("../public/gift-cover.jpg");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }

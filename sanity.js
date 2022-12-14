@@ -12,4 +12,10 @@ export const sanityClient = createClient({
 
 const builder = imageUrlBuilder(sanityClient)
 
-export const urlFor = source => builder.image(source)
+export const urlFor = source => {
+    try {
+        return builder.image(source).url()
+    } catch(err) {
+        return ''
+    }
+}
